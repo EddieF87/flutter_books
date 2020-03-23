@@ -1,7 +1,3 @@
-# book_club
-
-roam bookclub app
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
