@@ -16,7 +16,6 @@ class Book {
       etag: json['etag'],
       info: BookInfo.fromJson(json['volumeInfo']),
     );
-    print("I make a da book!  ${book.info.title}");
     return book;
   }
 }
@@ -48,7 +47,6 @@ class BookInfo {
   });
 
   factory BookInfo.fromJson(Map<String, dynamic> json) {
-    print("yyyy $json");
     var imageLinks = json['imageLinks'] ?? json;
     return BookInfo(
       title: json['title'],

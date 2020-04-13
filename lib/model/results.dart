@@ -1,6 +1,6 @@
 import 'book.dart';
 
-class Results{
+class Results {
   final List<Book> books;
 
   Results(this.books);
@@ -9,7 +9,6 @@ class Results{
     var items = json['items'];
     var books = List<Book>();
     for (var item in items) {
-      print("item  = $item");
       books.add(Book.fromJson(item));
     }
     return Results(books);
